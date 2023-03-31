@@ -70,8 +70,8 @@ const sortedByYearsLived = inventors.sort((a, b) => (a.passed - a.year) - (b.pas
 // Sort the people alphabetically by last name and return the sorted array
 export function sortByLastName() {
  const sortedByLastName = people.sort((a, b) => {
-    const [aLast, aFirst] = a.split(', ');
-    const [bLast, bFirst] = b.split(', ');
+    const [last, first] = a.split(', ');
+    const [last, first] = b.split(', ');
     return aLast > bLast ? 1 : -1;
   });
   return sortedByLastName;
